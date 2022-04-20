@@ -11,9 +11,6 @@ body {
   font-family: "Playfair Display", serif;
   text-align: center;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #main {
@@ -33,7 +30,7 @@ body {
 
 .title__container {
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,15 +46,15 @@ body {
 #tribute-info {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   padding-bottom: 1rem;
 
 }
 
 .tribute-info-box {
   border-radius: 15px;
-  background-color: aliceblue;
+  background-color: #f2f4ef;
   margin: 0 3rem;
   box-shadow:
     0 0 0 0 rgb(255, 255, 255),
@@ -86,17 +83,6 @@ li:before {
   background: #f4afa6;
   height: 20px;
   width: 20px;
-  /* content: '';
-  width: 15px;
-  height: 15px;
-  background: white;
-  border: 1px solid #4e5ed3;
-  box-shadow: 3px 3px 0px #bab5f8;
-  box-shadow: 3px 3px 0px #bab5f8;
-  border-radius: 50%;
-  position: absolute;
-  left: -10px;
-  top: 0px; */
 }
 
 
@@ -128,7 +114,7 @@ ul {
 .resumen {
   font-size: 1.3rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: justify;
 }
 
@@ -144,9 +130,6 @@ ul {
   background: #d85c56;
   border-radius: 10px;
   margin: 1rem 0.5rem 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #tribute-link:hover {
@@ -157,8 +140,88 @@ ul {
 
 .nav__container {
   width: 100%;
-  height: 5rem;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.general__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .timeline{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #image {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  #title{
+    font-size: 5.5rem;
+  }
+
+  #sub-title{
+    font-size: 1rem;
+  }
+
+  .title__container{
+    height: 20vh;
+  }
+
+  .message{
+    font-size: 2.5rem;
+  }
+
+  .resumen{
+    font-size: 1.2rem;
+  }
+
+  li{
+    font-size: 1.1rem;
+  }
+
+  #tribute-link {
+    width: 8rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .message__container{
+    margin-bottom: 0;
+  }
+  .title__container{
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  #title{
+    font-size: 3.5rem;
+  }
+
+  #sub-title{
+    font-size: 0.8rem;
+  }
+
+  .message{
+    font-size: 2rem;
+  }
+
+  .resumen{
+    font-size: 1rem;
+  }
+
+  li{
+    font-size: 1rem;
+  }
+
 }
