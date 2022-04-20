@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Laila', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f5efef;
+  padding-bottom: 2rem;
+}
+
+#title {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 8rem;
+  color: #823f67;
+}
+
+.title__container {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sub-title {
+  font-family: 'Laila', sans-serif;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+#tribute-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.tribute-info-box {
+  border-radius: 15px;
+  background-color: aliceblue;
+  margin: 0 3rem;
+  box-shadow:
+    0 0 0 0 rgb(255, 255, 255),
+    0em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+li {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+li:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+
+li:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+
+#image {
+  width: 100vw;
+  height: 60vh;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+#img-div {
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+ul {
+  text-align: start;
+  width: 75%;
+}
+
+.message__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10% 1rem;
+}
+
+.resumen {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.message {
+  font-family: "Allura", cursive;
+  font-size: 4rem;
+}
