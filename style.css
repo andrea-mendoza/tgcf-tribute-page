@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  text-decoration:none;
-  list-style:none;
+  text-decoration: none;
+  list-style: none;
   font-family: 'Laila', sans-serif;
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ body {
 #title {
   font-family: 'Ma Shan Zheng', cursive;
   font-size: 8rem;
-  color: #823f67;
+  color: #c75054;
 }
 
 .title__container {
@@ -51,6 +51,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 1rem;
 
 }
 
@@ -65,7 +66,7 @@ body {
 
 li {
   padding-bottom: 1.5rem;
-  border-left: 1px solid #abaaed;
+  border-left: 1px dashed #5c413d;
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
@@ -77,7 +78,15 @@ li:last-child {
 }
 
 li:before {
-  content: '';
+  position: absolute;
+  left: -11px;
+  top: 0;
+  content: " ";
+  border-radius: 500%;
+  background: #f4afa6;
+  height: 20px;
+  width: 20px;
+  /* content: '';
   width: 15px;
   height: 15px;
   background: white;
@@ -87,7 +96,7 @@ li:before {
   border-radius: 50%;
   position: absolute;
   left: -10px;
-  top: 0px;
+  top: 0px; */
 }
 
 
@@ -106,7 +115,6 @@ li:before {
 
 ul {
   text-align: start;
-  width: 75%;
 }
 
 .message__container {
@@ -127,4 +135,30 @@ ul {
 .message {
   font-family: "Allura", cursive;
   font-size: 4rem;
+}
+
+#tribute-link {
+  width: 10rem;
+  height: 3rem;
+  color: white;
+  background: #d85c56;
+  border-radius: 10px;
+  margin: 1rem 0.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tribute-link:hover {
+  background: none;
+  color: black;
+  border: 1px solid #d85c56;
+}
+
+.nav__container {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
